@@ -715,10 +715,15 @@ img {
 .metric-icon {
   /* White stroke outlines on the lightning bolt, EKG pulse, map pin,
      and clock icons for consistent, high-contrast infra iconography. */
-  color: var(--text-primary);
+  color: #ffffff;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+}
+
+.metric-icon svg {
+  stroke: #ffffff;
+  stroke-width: 2;
 }
 
 .metric-value {
