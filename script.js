@@ -142,4 +142,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // --- Load US Map ---
+  const mapContainer = document.getElementById('usMap');
+  if (mapContainer) {
+    fetch('assets/us-map.svg')
+      .then(r => r.text())
+      .then(svg => { mapContainer.innerHTML = svg; });
+  }
 });

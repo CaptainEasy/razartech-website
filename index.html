@@ -56,21 +56,31 @@
         <a href="#investors" class="btn btn-secondary">Investor Relations</a>
       </div>
       <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-value">5.35 MW</div>
-          <div class="hero-stat-label">Live Capacity</div>
+        <div class="hero-timeline">
+          <div class="hero-stat timeline-node">
+            <div class="timeline-period">Now</div>
+            <div class="hero-stat-value">5.35 MW</div>
+            <div class="hero-stat-label">Live</div>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="hero-stat timeline-node">
+            <div class="timeline-period">2026</div>
+            <div class="hero-stat-value">22 MW</div>
+            <div class="hero-stat-label">Under Construction</div>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="hero-stat timeline-node">
+            <div class="timeline-period">2027</div>
+            <div class="hero-stat-value">100+ MW</div>
+            <div class="hero-stat-label">2027 Objective</div>
+          </div>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-value">22 MW</div>
-          <div class="hero-stat-label">Under Construction 2026</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-value">100+ MW</div>
-          <div class="hero-stat-label">Target by EOY 2027</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-value">3 States</div>
-          <div class="hero-stat-label">Data Center Locations</div>
+        <div class="hero-location">
+          <div class="hero-stat">
+            <div class="hero-stat-value">3 States</div>
+            <div class="hero-stat-label">Data Center Locations</div>
+          </div>
+          <div class="us-map" id="usMap"></div>
         </div>
       </div>
     </div>
@@ -96,16 +106,24 @@
       </div>
       <div class="about-grid">
         <div class="about-card">
-          <h3>CEO</h3>
+          <h3>Chief Executive Officer</h3>
           <p>20 years of software engineering experience. 4 years leading data center construction and operations. The technical vision behind Razar's infrastructure-first approach.</p>
         </div>
         <div class="about-card">
-          <h3>COO</h3>
-          <p>Licensed civil engineer with 10 years of experience in data center powered land development. Drives site selection, permitting, EPC coordination, and infrastructure buildout.</p>
+          <h3>VP of Infrastructure & Development</h3>
+          <p>Licensed civil engineer with 15+ years of experience in powered land development for data center infrastructure. Leads site selection, permitting, EPC coordination, and construction management - from raw land to operational facility.</p>
         </div>
         <div class="about-card">
           <h3>Lead Strategic Investor</h3>
           <p>10 years of experience in manufacturing and fabrication. Brings operational discipline and supply chain expertise to our hardware procurement and deployment pipeline.</p>
+        </div>
+        <div class="about-card">
+          <h3>VP of Product</h3>
+          <p>15 years of experience in technology product development. Drives product strategy and customer success across mining and hosted services.</p>
+        </div>
+        <div class="about-card">
+          <h3>VP of Quantitative Analytics</h3>
+          <p>Quantitative analyst with experience on the Chicago Mercantile Exchange. Leads data-driven decision making, risk modeling, and financial analytics for our mining operations.</p>
         </div>
       </div>
     </div>
@@ -238,7 +256,7 @@
             </svg>
           </div>
           <div class="metric-value">95%</div>
-          <div class="metric-label">Uptime Target</div>
+          <div class="metric-label">Uptime</div>
         </div>
         <div class="metric-card">
           <div class="metric-icon">
