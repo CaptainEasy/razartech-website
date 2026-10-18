@@ -343,36 +343,46 @@ img {
   gap: 28px;
   padding-top: 40px;
   border-top: 1px solid var(--border);
+  /* Break out of .hero-content's 800px max-width so the 4-node timeline
+     can live on one row at the same width as .container (1200px). */
+  width: calc(100vw - 48px);
+  max-width: var(--container-width);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
 }
 
 .hero-timeline {
   display: flex;
   align-items: center;
   gap: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .timeline-node {
   text-align: center;
-  padding: 20px 28px;
+  padding: 20px 24px;
   background: linear-gradient(180deg, var(--bg-card) 0%, var(--blue) 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-md);
   position: relative;
-  min-width: 160px;
+  min-width: 150px;
 }
 
 .timeline-period {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 
 .timeline-connector {
-  width: 40px;
+  width: 24px;
   height: 2px;
   background: linear-gradient(90deg, var(--accent-dark), var(--accent));
   flex-shrink: 0;
