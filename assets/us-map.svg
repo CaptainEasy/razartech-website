@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 975 610">
   <style>
-    path { fill: rgba(15,36,64,0.25); stroke: rgba(255,255,255,0.12); stroke-width: 1; stroke-linejoin: round; }
-    .highlighted { fill: rgba(192,192,200,0.5); stroke: rgba(255,255,255,0.6); stroke-width: 1.5; }
+    .us-map path { fill: rgba(15,36,64,0.25); stroke: rgba(255,255,255,0.12); stroke-width: 1; stroke-linejoin: round; }
+    .us-map .highlighted { fill: rgba(192,192,200,0.5); stroke: rgba(255,255,255,0.6); stroke-width: 1.5; }
   </style>
   <g transform="scale(1,-1) translate(0,-610)">
     <path class="AL" d="M677,130L681,131L682,131ZM671,234L671,234L695,236L717,238L729,193L731,191L731,188L733,186L734,184L734,181L736,180L733,177L734,174L733,171L733,167L735,166L735,164L735,158L735,156L736,155L737,153L721,151L709,149L689,148L689,145L691,142L694,141L693,137L695,136L694,135L692,132L686,131L684,130L688,131L688,132L685,134L685,137L684,140L682,140L681,136L681,132L678,133L676,133L672,166L672,176L672,206L673,232Z"/>

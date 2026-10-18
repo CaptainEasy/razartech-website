@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Load US Map ---
   const mapContainer = document.getElementById('usMap');
   if (mapContainer) {
-    fetch('assets/us-map.svg')
+    fetch('assets/us-map.svg?v=20261018b')
       .then(r => r.text())
       .then(svg => { mapContainer.innerHTML = svg; });
   }
