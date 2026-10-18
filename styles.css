@@ -713,7 +713,9 @@ img {
 }
 
 .metric-icon {
-  color: var(--accent);
+  /* White stroke outlines on the lightning bolt, EKG pulse, map pin,
+     and clock icons for consistent, high-contrast infra iconography. */
+  color: var(--text-primary);
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -728,8 +730,10 @@ img {
 }
 
 .metric-label {
+  /* Match the partner-type tagline treatment (silver accent) instead of
+     the muted grey so the labels read as crisply as the partner section. */
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
