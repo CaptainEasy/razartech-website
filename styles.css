@@ -367,7 +367,11 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-md);
   position: relative;
-  min-width: 150px;
+  /* All 4 nodes share equal width within the row so the shorter-content
+     "Live" card matches the wider "Q3 2026 – Q2 2027" card visually. */
+  flex: 1 1 0;
+  min-width: 180px;
+  max-width: 260px;
 }
 
 .timeline-period {
