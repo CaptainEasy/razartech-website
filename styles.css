@@ -262,6 +262,14 @@ img {
 }
 
 
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10,10,14,0.55) 0%, rgba(10,10,14,0.78) 55%, var(--bg-primary) 100%),
+    url("assets/site-dusk-aerial.jpg") center 70% / cover no-repeat;
+}
+
 .hero-grid {
   position: absolute;
   inset: 0;
@@ -1274,5 +1282,28 @@ img {
 
   .btn-large {
     padding: 14px 28px;
+  }
+}
+
+/* Photo row under the Bitcoin Mining subcards */
+.focus-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.focus-photos .focus-subcard-img {
+  margin-bottom: 0;
+  border: 1px solid var(--border);
+}
+
+.focus-photos .focus-subcard-img img {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 640px) {
+  .focus-photos {
+    grid-template-columns: 1fr;
   }
 }
