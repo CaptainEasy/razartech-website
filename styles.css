@@ -250,12 +250,29 @@ img {
 /* --- Hero Section --- */
 .hero {
   position: relative;
+  overflow: hidden;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Photo area: title + button only. The timeline sits below it, on the plain
+   page background, so the equipment in the photo is not covered. */
+.hero-top {
+  position: relative;
+  flex: 1 0 auto;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  padding: calc(var(--nav-height) + 40px) 24px 40px;
+  padding: calc(var(--nav-height) + 40px) 24px 90px;
+}
+
+.hero-stats-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px 110px;
 }
 
 .hero-bg {
@@ -269,8 +286,8 @@ img {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10,10,14,0.55) 0%, rgba(10,10,14,0.78) 55%, var(--bg-primary) 100%),
-    url("assets/site-dusk-aerial.jpg") center 70% / cover no-repeat;
+    linear-gradient(180deg, rgba(10,10,14,0.2) 0%, rgba(10,10,14,0.35) 60%, rgba(10,10,14,0.45) 100%),
+    url("assets/site-aerial-live.jpg") center 25% / cover no-repeat;
 }
 
 .hero-grid {
@@ -344,7 +361,7 @@ img {
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 0;
 }
 
 .hero-stats {
@@ -354,12 +371,9 @@ img {
   gap: 28px;
   padding-top: 40px;
   border-top: 1px solid var(--border);
-  /* Break out of .hero-content's 800px max-width so the 4-node timeline
-     can live on one row at the same width as .container (1200px). */
-  width: calc(100vw - 48px);
+  /* Full container width so the 4-node timeline fits on one row. */
+  width: 100%;
   max-width: var(--container-width);
-  margin-left: 50%;
-  transform: translateX(-50%);
   box-sizing: border-box;
 }
 
@@ -1227,7 +1241,7 @@ img {
   }
 
   .hero-actions {
-    margin-bottom: 48px;
+    margin-bottom: 0;
   }
 
   .footer-content {
@@ -1309,4 +1323,10 @@ img {
   .focus-photos {
     grid-template-columns: 1fr;
   }
+}
+
+/* Tighter crop on the dusk site photo in the Bitcoin Mining card. */
+.focus-photos .focus-subcard-img img.zoom-crop {
+  transform: scale(1.4);
+  transform-origin: 52% 66%;
 }
